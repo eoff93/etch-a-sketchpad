@@ -43,13 +43,15 @@ appendGrid(generateGrid(gridSize));
 setBoxSize(boxSize);
 
 // resets and populates the grid again using prompt answer
-$('#reset').click(() => {
+function regenerateGrid() {
   gridSize = prompt('Enter new grid size');
   boxSize = 640 / gridSize;
   $('.container').empty();
   appendGrid(generateGrid(gridSize));
   setBoxSize(boxSize);
-});
+}
+
+$('#reset').click(regenerateGrid);
 
 // sets the background of a box to a random color on hover
 $(document).on('mouseover', '.box', function setRandomBackground() {
