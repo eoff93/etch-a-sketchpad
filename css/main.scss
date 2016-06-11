@@ -1,0 +1,19 @@
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 384px;
+}
+.box {
+  height: 24px;
+  width: 24px;
+  background: #FAA02B;
+  display: inline-block;
+}
+
+.row {
+  height: 24px;
+}
