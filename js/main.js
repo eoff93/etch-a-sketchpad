@@ -42,6 +42,13 @@ function getRandomColor() {
 appendGrid(generateGrid(gridSize));
 setBoxSize(boxSize);
 
+$('#reset').click(function() {
+  gridSize = prompt('Enter new grid size');
+  boxSize = 640 / gridSize;
+  $('.container').empty();
+  appendGrid(generateGrid(gridSize));
+  setBoxSize(boxSize);
+});
 
 // sets the background of a box to a random color on hover
 $('.box').hover(function setRandomBackground() {

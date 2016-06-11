@@ -11,4 +11,10 @@ body * {
   background: #FAA02B;
   display: inline-block; }
 
+.button-wrapper {
+  text-align: center; }
+
+button {
+  margin-top: 50px; }
+
 /*# sourceMappingURL=main.css.map */
