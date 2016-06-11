@@ -1,5 +1,5 @@
 
-let gridSize = 64;
+let gridSize = 16;
 let boxSize = 640 / gridSize;
 
 // generate a grid of boxes based on size entered
@@ -42,7 +42,8 @@ function getRandomColor() {
 appendGrid(generateGrid(gridSize));
 setBoxSize(boxSize);
 
-$('#reset').click(function() {
+// resets and populates the grid again using prompt answer
+$('#reset').click(() => {
   gridSize = prompt('Enter new grid size');
   boxSize = 640 / gridSize;
   $('.container').empty();
@@ -51,6 +52,6 @@ $('#reset').click(function() {
 });
 
 // sets the background of a box to a random color on hover
-$('.box').hover(function setRandomBackground() {
+$(document).on('mouseover', '.box', function setRandomBackground() {
   $(this).css('background', getRandomColor());
 });
