@@ -5,15 +5,11 @@ body * {
 .container {
   margin: 0 auto;
   margin-top: 50px;
-  width: 384px;
-}
-.box {
-  height: 24px;
-  width: 24px;
-  background: #FAA02B;
-  display: inline-block;
+  height: 640px;
+  width: 640px;
 }
 
-.row {
-  height: 24px;
+.box {
+  background: #FAA02B;
+  display: inline-block;
 }

@@ -4,15 +4,11 @@ body * {
 .container {
   margin: 0 auto;
   margin-top: 50px;
-  width: 384px; }
+  height: 640px;
+  width: 640px; }
 
 .box {
-  height: 24px;
-  width: 24px;
   background: #FAA02B;
   display: inline-block; }
-
-.row {
-  height: 24px; }
 
 /*# sourceMappingURL=main.css.map */

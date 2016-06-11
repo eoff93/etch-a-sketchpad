@@ -1,4 +1,7 @@
 
+let gridSize = 64;
+let boxSize = 640 / gridSize;
+
 // generate a grid of boxes based on size entered
 function generateGrid(size) {
   let grid = '';
@@ -11,6 +14,13 @@ function generateGrid(size) {
     grid += '</section>';
   }
   return grid;
+}
+
+// set the dimensions of box and rows
+function setBoxSize(size) {
+  $('.box').height(size);
+  $('.box').width(size);
+  $('.row').height(size);
 }
 
 // append generated grid to container
@@ -28,8 +38,12 @@ function getRandomColor() {
   return color;
 }
 
-appendGrid(generateGrid(16));
+// outputs the starting grid
+appendGrid(generateGrid(gridSize));
+setBoxSize(boxSize);
 
+
+// sets the background of a box to a random color on hover
 $('.box').hover(function setRandomBackground() {
   $(this).css('background', getRandomColor());
 });
